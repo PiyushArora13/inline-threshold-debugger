@@ -67,3 +67,7 @@ Hardware: Prototype PCB designed and validated
 Firmware: Threshold evaluation and visual indication logic implemented
 
 Future work: Data logging, configurable thresholds, and host-side visualization
+
+# Note on File Viewing
+
+KiCad design files are stored in source format and are not rendered by GitHub. Please clone or download the repository and open it in KiCad to view schematics and PCB layouts. Rendered images are included for reference
