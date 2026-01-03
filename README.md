@@ -2,7 +2,7 @@
 
 Non-Intrusive USB-C Inline Diagnostic PCB for Master–Slave Systems
 
-Overview
+# Overview
 
 This project presents a non-intrusive inline hardware debugger PCB designed for master–slave embedded architectures, where continuous electrical monitoring is required without altering normal system behavior. The board is placed directly in-line between master and slave nodes, enabling real-time observation of voltage and current characteristics while preserving signal integrity.
 
@@ -10,7 +10,7 @@ The design focuses on high-impedance sensing and comparator-based threshold dete
 
 A USB Type-C pass-through interface is used for both input and output, providing a compact, reversible, and standardized physical layer compatible with modern embedded and robotics platforms.
 
-System Architecture
+# System Architecture
 
 The PCB is built around an Arduino Nano (ATmega328P), which serves as the central processing unit for data acquisition, threshold evaluation, and status indication. The microcontroller samples analog signals via its ADC and coordinates with dedicated comparator stages to classify operating conditions deterministically.
 
@@ -20,7 +20,7 @@ Voltage monitoring is achieved through a high-impedance sensing network followed
 
 The inline signal path is designed to maintain impedance continuity between master and slave devices, allowing the debugger PCB to function as a transparent diagnostic layer rather than an active system element.
 
-Threshold Evaluation and Visual Indication
+# Threshold Evaluation and Visual Indication
 
 Measured voltage and current parameters are continuously evaluated against predefined threshold regions. The system provides immediate visual feedback through:
 
@@ -36,7 +36,7 @@ Red – Critical or unsafe operating condition
 
 This hardware-level indication enables rapid fault identification without requiring external instruments or software-based debugging tools.
 
-Design Intent and Rationale
+# Design Intent and Rationale
 
 Non-intrusive monitoring: High-impedance sensing and isolated current measurement prevent disturbance of the original signal path.
 
@@ -48,7 +48,7 @@ USB Type-C interface: Provides a compact, reversible, and standardized physical 
 
 Separation of sensing and indication: Improves robustness and simplifies system-level fault analysis.
 
-Applications
+# Applications
 
 Inline debugging of master–slave embedded systems
 
